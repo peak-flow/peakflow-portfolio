@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliteMate - Find Your Perfect Match</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(90deg, #FF4D7F 0%, #A056F7 100%);
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-sm py-4 px-6 flex justify-between items-center">
+        <div class="flex items-center">
+            <h1 class="text-xl font-bold">Elite<span class="text-pink-500">Mate</span> ❤</h1>
+        </div>
+        <div class="hidden md:flex space-x-8">
+            <a href="#" class="text-gray-800 hover:text-pink-500">How it Works</a>
+            <a href="#" class="text-gray-800 hover:text-pink-500">Success Stories</a>
+            <a href="#" class="text-gray-800 hover:text-pink-500">Safety</a>
+            <a href="#" class="text-gray-800 hover:text-pink-500">Dating Advice</a>
+        </div>
+        <div class="flex items-center space-x-4">
+            <a href="#" class="text-gray-800 hover:text-pink-500">Log in</a>
+            <a href="#" class="bg-pink-500 text-white px-4 py-2 rounded-full hover:bg-pink-600">Sign Up Free</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="md:flex md:justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">Find Your Perfect Match</h2>
+                    <p class="text-lg mb-8">EliteMate simplifies socializing by connecting you with like-minded singles in your area. Join our community today!</p>
+                    
+                    <div class="bg-white rounded-lg p-2 shadow-lg">
+                        <div class="flex flex-wrap">
+                            <div class="w-full md:w-1/4 p-2">
+                                <select class="w-full bg-gray-100 rounded-lg p-3 text-gray-700">
+                                    <option>Female</option>
+                                    <option>Male</option>
+                                    <option>Non-binary</option>
+                                </select>
+                            </div>
+                            <div class="w-full md:w-1/4 p-2">
+                                <select class="w-full bg-gray-100 rounded-lg p-3 text-gray-700">
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Non-binary</option>
+                                </select>
+                            </div>
+                            <div class="w-full md:w-1/4 p-2">
+                                <select class="w-full bg-gray-100 rounded-lg p-3 text-gray-700">
+                                    <option>New York</option>
+                                    <option>Los Angeles</option>
+                                    <option>Chicago</option>
+                                    <option>Houston</option>
+                                </select>
+                            </div>
+                            <div class="w-full md:w-1/4 p-2">
+                                <button class="w-full bg-pink-500 text-white py-3 px-6 rounded-lg flex items-center justify-center hover:bg-pink-600">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                                    </svg>
+                                    Find Matches
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 text-center">
+                        <a href="#" class="bg-white text-pink-500 px-8 py-3 rounded-full font-medium hover:bg-gray-100">Join Free Today</a>
+                    </div>
+                </div>
+                
+                <div class="w-full md:w-1/4 mb-8 md:mb-0">
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Press</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="w-full md:w-1/4 mb-8 md:mb-0">
+                    <h4 class="font-bold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Help Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Safety Tips</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Community Guidelines</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="w-full md:w-1/4">
+                    <h4 class="font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-16 text-center">Why Choose <span class="text-pink-500">EliteMate</span></h2>
+            
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-pink-100 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-pink-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Millions of Singles</h3>
+                        <p class="text-gray-600">Connect with millions of singles looking for meaningful relationships from the comfort of your home.</p>
+                    </div>
+                </div>
+                
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-pink-100 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-pink-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Safe & Secure</h3>
+                        <p class="text-gray-600">Your privacy and security are our top priorities. We implement advanced measures to keep your information safe.</p>
+                    </div>
+                </div>
+                
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-pink-100 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-pink-500" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Real Connections</h3>
+                        <p class="text-gray-600">Our advanced matching algorithm helps you find compatible partners based on your preferences and personality.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Members Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-4 text-center">Featured Members</h2>
+            <p class="text-center text-gray-600 mb-12">Take a look at some of our active members who are looking for meaningful connections just like you.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Member 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="h-48 bg-gray-200 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between">
+                            <div>
+                                <h3 class="font-bold">Michael, 26</h3>
+                                <p class="text-gray-600 text-sm">Los Angeles, CA</p>
+                            </div>
+                            <span class="text-green-500 text-sm font-medium">Online</span>
+                        </div>
+                        <a href="#" class="block text-center mt-4 border border-gray-300 rounded py-2 text-gray-700 hover:bg-gray-50">View Profile</a>
+                    </div>
+                </div>
+                
+                <!-- Member 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="h-48 bg-gray-200 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between">
+                            <div>
+                                <h3 class="font-bold">Jessica, 27</h3>
+                                <p class="text-gray-600 text-sm">New York, NY</p>
+                            </div>
+                            <span class="text-green-500 text-sm font-medium">Online</span>
+                        </div>
+                        <a href="#" class="block text-center mt-4 border border-gray-300 rounded py-2 text-gray-700 hover:bg-gray-50">View Profile</a>
+                    </div>
+                </div>
+                
+                <!-- Member 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="h-48 bg-gray-200 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between">
+                            <div>
+                                <h3 class="font-bold">Michael, 28</h3>
+                                <p class="text-gray-600 text-sm">Los Angeles, CA</p>
+                            </div>
+                            <span class="text-green-500 text-sm font-medium">Online</span>
+                        </div>
+                        <a href="#" class="block text-center mt-4 border border-gray-300 rounded py-2 text-gray-700 hover:bg-gray-50">View Profile</a>
+                    </div>
+                </div>
+                
+                <!-- Member 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="h-48 bg-gray-200 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between">
+                            <div>
+                                <h3 class="font-bold">Jessica, 29</h3>
+                                <p class="text-gray-600 text-sm">New York, NY</p>
+                            </div>
+                            <span class="text-green-500 text-sm font-medium">Online</span>
+                        </div>
+                        <a href="#" class="block text-center mt-4 border border-gray-300 rounded py-2 text-gray-700 hover:bg-gray-50">View Profile</a>
+                    </div>
+                </div>
+                
+                <!-- Member 5 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="h-48 bg-gray-200 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between">
+                            <div>
+                                <h3 class="font-bold">Michael, 30</h3>
+                                <p class="text-gray-600 text-sm">Los Angeles, CA</p>
+                            </div>
+                            <span class="text-green-500 text-sm font-medium">Online</span>
+                        </div>
+                        <a href="#" class="block text-center mt-4 border border-gray-300 rounded py-2 text-gray-700 hover:bg-gray-50">View Profile</a>
+                    </div>
+                </div>
+                
+                <!-- Member 6 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="h-48 bg-gray-200 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between">
+                            <div>
+                                <h3 class="font-bold">Jessica, 31</h3>
+                                <p class="text-gray-600 text-sm">New York, NY</p>
+                            </div>
+                            <span class="text-green-500 text-sm font-medium">Online</span>
+                        </div>
+                        <a href="#" class="block text-center mt-4 border border-gray-300 rounded py-2 text-gray-700 hover:bg-gray-50">View Profile</a>
+                    </div>
+                </div>
+                
+                <!-- Member 7 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="h-48 bg-gray-200 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between">
+                            <div>
+                                <h3 class="font-bold">Michael, 32</h3>
+                                <p class="text-gray-600 text-sm">Los Angeles, CA</p>
+                            </div>
+                            <span class="text-green-500 text-sm font-medium">Online</span>
+                        </div>
+                        <a href="#" class="block text-center mt-4 border border-gray-300 rounded py-2 text-gray-700 hover:bg-gray-50">View Profile</a>
+                    </div>
+                </div>
+                
+                <!-- Member 8 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="h-48 bg-gray-200 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between">
+                            <div>
+                                <h3 class="font-bold">Jessica, 33</h3>
+                                <p class="text-gray-600 text-sm">New York, NY</p>
+                            </div>
+                            <span class="text-green-500 text-sm font-medium">Online</span>
+                        </div>
+                        <a href="#" class="block text-center mt-4 border border-gray-300 rounded py-2 text-gray-700 hover:bg-gray-50">View Profile</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="text-pink-500 flex items-center justify-center font-medium hover:text-pink-600">
+                    View More Members
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="gradient-bg py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center text-white">Success Stories</h2>
+            
+            <div class="flex flex-wrap -mx-4">
+                <!-- Story 1 -->
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-white rounded-lg p-6 h-full">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full mr-4 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold">Jennifer & David</h3>
+                                <p class="text-gray-600 text-sm">Dating 3 years</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">"We matched on EliteMate and instantly connected. After our first date, we knew we had something special. Two years later, we're still going strong!"</p>
+                    </div>
+                </div>
+                
+                <!-- Story 2 -->
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-white rounded-lg p-6 h-full">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full mr-4 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold">Michael & Sarah</h3>
+                                <p class="text-gray-600 text-sm">Dating 1 year</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">"I was skeptical about online dating until I tried EliteMate. The matching algorithm is incredible! Found exactly what I was looking for, and we've been happily dating for a year now. Getting married next spring!"</p>
+                    </div>
+                </div>
+                
+                <!-- Story 3 -->
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-white rounded-lg p-6 h-full">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full mr-4 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold">Alex & Jamie</h3>
+                                <p class="text-gray-600 text-sm">Married 1 year</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700">"EliteMate made it easy to find someone who shares all my interests. After six months of dating, I proposed to Jamie and we just celebrated our first wedding anniversary!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/4 mb-8 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">Elite<span class="text-pink-500">Mate</span></h3>
+                    <p class="text-gray-400 mb-4">Find your perfect match with our advanced matching algorithm.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
+                        </a>
